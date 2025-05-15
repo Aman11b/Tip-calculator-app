@@ -89,7 +89,6 @@ ol[role='list'] {
     --fs:24px;
     --fw-700:700;
 
-
     --ff:"Space Mono", monospace;
 
 }
@@ -98,6 +97,23 @@ body{
     font-family: var(--ff);
     font-size: var(--fs);
     font-weight: var(--fw-700);
+}
+
+.wrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-color: var(--clr-Grey-200);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: 2rem;
+    
+
 }
 
 @media screen and (max-width:375px){
