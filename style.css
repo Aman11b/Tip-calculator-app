@@ -144,7 +144,7 @@ body{
   width: 50%;
 }
 
-.container .output_div {
+.container > .output_div {
   color: var(--clr-Grey-200);
   background-color: var(--clr-Green-900);
 
@@ -157,14 +157,36 @@ body{
 
 }
 
-.output_value,
-.total_person{
+.output_value{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  justify-content:space-between;
+  gap: 1rem;
 }
 
+.tip_amount_heading,
+.total_person_heading{
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tip_amount_heading > p,
+.total_person_heading > p{
+  color: var(--clr-Grey-500);
+}
+
+output{
+  font-size: 2.6rem;
+  color: var(--clr-Green-400);
+}
+
+.tip_amount,
+.total_person{
+  display: flex;
+  justify-content: space-between;
+}
 
 @media screen and (max-width:375px){
 
