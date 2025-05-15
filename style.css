@@ -97,6 +97,8 @@ body{
     font-family: var(--ff);
     font-size: var(--fs);
     font-weight: var(--fw-700);
+
+    color: var(--clr-Grey-500);
 }
 
 .wrapper{
@@ -112,9 +114,57 @@ body{
     flex-direction: column;
 
     gap: 2rem;
-    
+
 
 }
+
+.wrapper .heading h1{
+  letter-spacing: 1rem
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  padding: 2rem;
+
+  border-radius: 1rem;
+  background-color: var(--clr-White);
+}
+
+.container > .bill_div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bill_div,
+.output_div{
+  width: 50%;
+}
+
+.container .output_div {
+  color: var(--clr-Grey-200);
+  background-color: var(--clr-Green-900);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.output_value,
+.total_person{
+  display: flex;
+  flex-direction: row;
+
+  justify-content:space-between;
+}
+
 
 @media screen and (max-width:375px){
 
