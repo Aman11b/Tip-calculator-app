@@ -138,10 +138,34 @@ body{
   flex-direction: column;
   gap: 2rem;
 }
+input{
+  cursor: pointer;
+  width: 100%;
+
+  background-color: var(--clr-Grey-50);
+  padding: 10px 20px;
+
+  border: 3px solid var(--clr-Green-400);
+  border-radius: 8px;
+}
 
 .bill_div,
 .output_div{
   width: 50%;
+}
+
+.bill,
+.people{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+}
+
+.bill > h3,
+.people > h3,
+.Tip > h3{
+  font-size: smaller;
 }
 
 .Tip_buttons{
@@ -160,11 +184,21 @@ button{
   color: var(--clr-Grey-200);
 
   padding: 10px 20px;
+
+  border-radius: 8px;
+  cursor: pointer;
 }
 
+button:hover{
+  background-color: var(--clr-Green-400);
+  color: var(--clr-Green-900);
+}
 .reset_btn{
   background-color: var(--clr-Green-400);
   color: var(--clr-Green-900);
+}
+.reset_btn:hover{
+  background-color: var(--clr-Grey-200);
 }
 
 .container > .output_div {
@@ -203,6 +237,7 @@ button{
 output{
   font-size: 2.6rem;
   color: var(--clr-Green-400);
+
 }
 
 
