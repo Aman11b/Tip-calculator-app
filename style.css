@@ -144,6 +144,29 @@ body{
   width: 50%;
 }
 
+.Tip_buttons{
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+}
+
+button{
+  border: none;
+  height: 3rem;
+  font-weight: var(--fw-700);
+
+  background-color: var(--clr-Green-900);
+  color: var(--clr-Grey-200);
+
+  padding: 10px 20px;
+}
+
+.reset_btn{
+  background-color: var(--clr-Green-400);
+  color: var(--clr-Green-900);
+}
+
 .container > .output_div {
   color: var(--clr-Grey-200);
   background-color: var(--clr-Green-900);
@@ -181,6 +204,8 @@ output{
   font-size: 2.6rem;
   color: var(--clr-Green-400);
 }
+
+
 
 .tip_amount,
 .total_person{
