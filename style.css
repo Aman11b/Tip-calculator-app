@@ -268,8 +268,13 @@ button:hover{
   display: flex;
   flex-direction: column;
 
+  /* justify-content:flex-start; */
+  /* align-self: flex-start; */
+  
+
   gap: 1rem;
 }
+
 
 .tip_amount_heading,
 .total_person_heading{
@@ -277,6 +282,9 @@ button:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
+  /* align-items: center; */
 }
 
 .tip_amount_heading > p,
@@ -285,14 +293,17 @@ button:hover{
 }
 
 output{
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--clr-Green-400);
+
+  
 }
 
 .tip_amount,
 .total_person{
   display: flex;
   justify-content: space-between;
+
 }
 
 @media screen and (max-width:375px){
