@@ -68,11 +68,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
 textarea:not([rows]) {
   min-height: 10em;
 }
@@ -249,10 +244,7 @@ button:hover{
 output{
   font-size: 2.6rem;
   color: var(--clr-Green-400);
-
 }
-
-
 
 .tip_amount,
 .total_person{
