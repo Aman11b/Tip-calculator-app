@@ -84,9 +84,9 @@ customBtn.addEventListener('click',()=>{
   custom_Input.style.display = "";
   custom_Input.focus();
 });
-custom_Input.addEventListener('click',()=>{
+custom_Input.addEventListener('input',()=>{
   const customValue = parseFloat(custom_Input.value);
-  if(!NaN(customValue)){
+  if(!isNaN(customValue)){
     tipPercentage = customValue /100;
     calculateTip();
   }
