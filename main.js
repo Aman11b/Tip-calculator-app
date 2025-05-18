@@ -4,6 +4,7 @@ const tipBtn = document.querySelectorAll(".tip_btn");
 const customBtn = document.getElementById("custom_btn");
 const custom_Input = document.getElementById("Custom_input");
 const resetBtn = document.getElementById("reset_btn");
+const peopleError = document.getElementById("people-error");
 
 const tipAmountOutput = document.getElementById("tipAmount");
 const totalPerPersonOutput = document.getElementById("total_Per_person");
@@ -67,6 +68,11 @@ billInput.addEventListener('input',()=>{
 });
 
 peoplesInput.addEventListener("input",()=>{
+  if(Number(peoplesInput.value)===0){
+    peopleError.textContent = "Can't be zero"
+  }else{
+    peopleError.textContent='';
+  }
   people=parseInt(peoplesInput.value) || 1;
   calculateTip(); 
 })

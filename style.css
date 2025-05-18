@@ -100,28 +100,26 @@ ol[role='list'] {
 }
 
 body{
-    font-family: var(--ff);
-    font-size: var(--fs);
-    font-weight: var(--fw-700);
+  font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: var(--fw-700);
 
-    color: var(--clr-Grey-500);
+  color: var(--clr-Grey-500);
 }
 
 .wrapper{
-    min-height: 100vh;
-    min-width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 
-    background-color: var(--clr-Grey-200);
+  background-color: var(--clr-Grey-200);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    gap: 2rem;
-
-
+  gap: 3rem;
 }
 
 .wrapper .heading h1{
@@ -144,6 +142,8 @@ body{
   flex-direction: column;
   gap: 2rem;
 }
+
+
 input{
   cursor: pointer;
   width: 100%;
@@ -155,6 +155,28 @@ input{
   border-radius: 8px;
 
   text-align: right;
+
+  color: var(--clr-Green-400);
+  font-weight: var(--fw-700);
+}
+
+input:focus {
+  border-color: var(--clr-Green-400);
+  outline: none;
+}
+
+.bill_input,
+.people_input {
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 20px 20px;
+}
+
+.bill_input {
+  background-image: url("./images/icon-dollar.svg");
+}
+.people_input {
+  background-image: url("./images/icon-person.svg");
 }
 
 .bill_div,
@@ -170,10 +192,23 @@ input{
 
 }
 
+.people_heading{
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+#people-error{
+  color: red; font-size: 16px;
+  text-align: center;
+}
+
 .bill > h3,
-.people > h3,
+.people .people_heading > h3,
 .Tip > h3{
-  font-size: smaller;
+  font-size: 16px;
 }
 
 .Tip_buttons{
@@ -187,12 +222,20 @@ button{
   border: none;
   height: 3.2rem;
   font-weight: var(--fw-700);
-
-  background-color: var(--clr-Green-900);
-  color: var(--clr-Grey-200);
-
   border-radius: 8px;
   cursor: pointer;
+
+}
+
+.tip_btn{
+  background-color: var(--clr-Green-900);
+  color: var(--clr-Grey-200);
+  
+}
+
+#custom_btn{
+  background-color: var(--clr-Grey-50);
+  color: var(--clr-Grey-500);
 }
 
 button:hover{
@@ -242,7 +285,7 @@ button:hover{
 }
 
 output{
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: var(--clr-Green-400);
 }
 
@@ -254,5 +297,21 @@ output{
 
 @media screen and (max-width:375px){
 
-    
+  .container {
+    flex-direction: column;
+  }
+  .wrapper .heading {
+    padding-top: 3rem;
+  }
+  .bill_div,
+  .output_div{
+    width: 100%;
+  }
+  .Tip_buttons{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .container > .output_div {
+    gap: 3rem;
+  }
 }

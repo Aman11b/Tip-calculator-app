@@ -51,7 +51,10 @@
             </div>
           </div>
           <div class="people">
-            <h3>Number of People</h3>
+            <div class="people_heading">
+              <h3>Number of People</h3>
+              <span id="people-error"></span>
+            </div>
             <input type="number" id="people" min="1" class="people_input" />
           </div>
         </article>
@@ -72,7 +75,7 @@
               <output id="total_Per_person">$0.00</output>
             </div>
           </div>
-          <button type="reset" id="reset_btn">Reset</button>
+          <button type="reset" id="reset_btn" class="reset_btn">Reset</button>
         </article>
       </div>
     </main>
