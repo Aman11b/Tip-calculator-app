@@ -41,17 +41,18 @@
           <div class="Tip">
             <h3>Select Tip %</h3>
             <div class="Tip_buttons">
-              <button>5%</button>
-              <button>10%</button>
-              <button>15%</button>
-              <button>25%</button>
-              <button>50%</button>
-              <button>Custom</button>
+              <button value="0.05"  class="tip_btn">5%</button>
+              <button value="0.10" class="tip_btn">10%</button>
+              <button value="0.15" class="tip_btn">15%</button>
+              <button value="0.25" class="tip_btn">25%</button>
+              <button value="0.50" class="tip_btn">50%</button>
+              <button id="custom_btn">Custom</button>
+              <input type="number" id="Custom_input" min="0" style="display: none;">
             </div>
           </div>
           <div class="people">
             <h3>Number of People</h3>
-            <input type="number" id="people" min="0" class="people_input" />
+            <input type="number" id="people" min="1" class="people_input" />
           </div>
         </article>
         <article class="output_div">
@@ -71,7 +72,7 @@
               <output id="tipAmount">$0.00</output>
             </div>
           </div>
-          <button type="reset" class="reset_btn">Reset</button>
+          <button type="reset" id="reset_btn">Reset</button>
         </article>
       </div>
     </main>
