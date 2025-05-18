@@ -207,7 +207,7 @@ input:focus {
 
 .bill > label,
 .people .people_heading > label,
-.Tip > h3{
+.Tip > label{
   font-size: 16px;
 }
 
